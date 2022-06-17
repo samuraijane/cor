@@ -27,7 +27,16 @@ router.get('/google', async function(req, res, next) {
     auth,
     spreadsheetId,
   })
-  res.send(data);
+
+  const getRows = await googleSheets.spreadsheets.values.get({
+
+    auth,
+    spreadsheetId,
+    range: "Sheet1"
+  })
+
+
+  res.send(getRows.data);
 })
 
 module.exports = router;
