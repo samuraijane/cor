@@ -1,11 +1,7 @@
 import React from "react";
 
 const Footer = () => {
-  return (
-    <div>
-      <h1>footer</h1>
-    </div>
-  );
+  return <div className="sticky">footer</div>;
 };
 
 export default Footer;
