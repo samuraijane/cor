@@ -1,0 +1,16 @@
+.banner {
+    padding: 40px;
+    text-align: left;
+    background: #354a5a;
+    color: white;
+    font-size: 20px;
+}
+
+.button {
+    background-color: rgba(250,125,41,.85);
+    border-color: rgba(250,125,41,.85);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 30px;
+}
