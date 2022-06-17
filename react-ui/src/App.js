@@ -1,3 +1,6 @@
+import logo from './logo.svg';
+import Navbar from "./components/navbar/Navbar"
+import './App.css';
 
 import React, { createContext }  from 'react';
 import Form from './components/form/Form';
@@ -19,16 +22,15 @@ const App = () => {
 
   return (
     <div className="App">
-    <AppContext.Provider value='isLoggedIn'>
-      <Header isMobileView={isMobileView} />
-      <Main />
-      <AboutUs />
-
-      <Form />
-      <Info />
-
-      <Footer />
-    </AppContext.Provider>
+      <AppContext.Provider value='isLoggedIn'>
+        <Header isMobileView={isMobileView} />
+        <Navbar />
+        <Main />
+        <AboutUs />
+        <Form />
+        <Info />
+        <Footer />
+      </AppContext.Provider>
     </div>
   );
 };
