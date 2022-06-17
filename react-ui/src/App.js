@@ -1,4 +1,5 @@
 import React, { createContext }  from 'react';
+import Form from './components/form/Form';
 import Footer from './sectioning/footer/footer';
 import Header from './sectioning/header/header';
 import Main from './sectioning/main/main';
@@ -15,6 +16,7 @@ const App = () => {
     <AppContext.Provider value='isLoggedIn'>
       <Header isMobileView={isMobileView} />
       <Main />
+      <Form />
       <Footer />
     </AppContext.Provider>
     </div>
@@ -22,7 +24,3 @@ const App = () => {
 };
 
 export default App;
-
-
-
-

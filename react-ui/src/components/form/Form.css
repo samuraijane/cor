@@ -1,0 +1,113 @@
+
+*{
+    font-family:din-condensed-web;src:url(https://use.typekit.net/af/cfbead/0000000000000000000146b3/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/cfbead/0000000000000000000146b3/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/cfbead/0000000000000000000146b3/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;
+    /* background-color: #F2F2F2; */
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-bottom: 20px;
+    display: inline-block;
+    border: 1px solid #959697;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+textarea[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    height: 150px;
+    margin: 8px 0;
+    margin-bottom: 20px;
+    display: inline-block;
+    border: 1px solid #959697;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+input[type=submit] {
+    width: 150px;
+    background-color: #ED8E3B;
+    color: #FFFFFF;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    font-size: medium;
+}
+
+input[type=submit]:hover {
+    background-color: #eda160;
+}
+
+div {
+    border-radius: 5px;
+    background-color: white;
+    color: #787878;
+    /* padding: 20px; */
+    width: 95vw;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+}
+
+@media (max-width: 650px) {
+
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        margin-bottom: 20px;
+        display: inline-block;
+        border: 1px solid #959697;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+    
+    textarea[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        height: 150px;
+        margin: 8px 0;
+        margin-bottom: 20px;
+        display: inline-block;
+        border: 1px solid #959697;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+    
+    input[type=submit] {
+        width: 95vw;
+        background-color: #ED8E3B;
+        color: #FFFFFF;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        /* border-radius: 4px; */
+        cursor: pointer;
+        font-size: medium;
+    }
+    
+    input[type=submit]:hover {
+        background-color: #eda160;
+    }
+    
+    div {
+        border-radius: 5px;
+        background-color: white;
+        color: #787878;
+        /* padding: 20px; */
+        width: 95vw;
+        margin: auto;
+        padding: 0px;
+        font-size: 20px;
+    }
+    
+}
