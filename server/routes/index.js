@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/google', async function(req, res, next) {
+router.post('/google', async function(req, res, next) {
   const auth = new google.auth.GoogleAuth({
     keyFile: "sheets-credentials.json",
     scopes: "https://www.googleapis.com/auth/spreadsheets",
@@ -20,23 +20,32 @@ router.get('/google', async function(req, res, next) {
   const googleSheets = google.sheets({ version: "v4", auth: client});
 
   // Get sheets data
-
   const spreadsheetId= "1bM7_YyERZx4iKOefjKD3wqXgNWiA9pssUcy-bqi7NWM";
 
-  const data = await googleSheets.spreadsheets.get({
+  // const data = await googleSheets.spreadsheets.get({
+  // })
+
+  // const getRows = await googleSheets.spreadsheets.values.get({
+  // })
+
+  // Write rows to spreadsheet
+  googleSheets.spreadsheets.values.append({
     auth,
     spreadsheetId,
+    range: "Sheet1!A:B",
+    valueInputOption: "USER_ENTERED",
+    resource: {
+
+      values: [
+        ["Test20", "test29"],
+        ["shrek", "shrekRow"],
+      ],
+
+    }
   })
 
-  const getRows = await googleSheets.spreadsheets.values.get({
 
-    auth,
-    spreadsheetId,
-    range: "Sheet1"
-  })
-
-
-  res.send(getRows.data);
+  res.send("posted");
 })
 
 module.exports = router;
