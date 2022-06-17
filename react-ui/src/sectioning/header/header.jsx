@@ -1,9 +1,9 @@
 import React from "react";
 
-const Header = () => {
+const Header = ({ isMobileView }) => {
   return (
     <div>
-      <h1>This is the header</h1>
+      <p>This is the header - if you see this you see the hamburger menu {isMobileView && isMobileView.toString()} </p>
     </div>
   );
 };
