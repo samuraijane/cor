@@ -14,7 +14,6 @@ const App = () => {
     <div className="App">
     <AppContext.Provider value='isLoggedIn'>
       <Header isMobileView={isMobileView} />
-      <p>{isMobileView && isMobileView.toString()}</p>
       <Main />
       <Footer />
     </AppContext.Provider>
