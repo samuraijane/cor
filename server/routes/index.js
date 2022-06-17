@@ -7,6 +7,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+
 router.post('/google', async function(req, res, next) {
   const auth = new google.auth.GoogleAuth({
     keyFile: "sheets-credentials.json",
@@ -15,12 +16,25 @@ router.post('/google', async function(req, res, next) {
 
   // Client instance auth
   const client = await auth.getClient();
+
+  const rowValues = "Mentee";
+  let spreadsheetId= "1bM7_YyERZx4iKOefjKD3wqXgNWiA9pssUcy-bqi7NWM";
+
+  // if(req.value.role == "Mentor")
+  if(rowValues == "Mentor")
+  {
+    spreadsheetId = "1KjFWSbpAddTq0qgucoqZPZ6sPpWFo4csAjkG3Xl2c-I" 
+  } 
+  // else if(req.value.role == "Mentee")
+  else if(rowValues == "Mentee")
+  {
+    spreadsheetId = "1bM7_YyERZx4iKOefjKD3wqXgNWiA9pssUcy-bqi7NWM" 
+  }
   
   // Google Sheet API instance
   const googleSheets = google.sheets({ version: "v4", auth: client});
 
   // Get sheets data
-  const spreadsheetId= "1bM7_YyERZx4iKOefjKD3wqXgNWiA9pssUcy-bqi7NWM";
 
   // const data = await googleSheets.spreadsheets.get({
   // })
@@ -37,14 +51,13 @@ router.post('/google', async function(req, res, next) {
     resource: {
 
       values: [
-        ["Test20", "test29"],
+        //req.body
+        // ["Test20", "test29"],
         ["shrek", "shrekRow"],
       ],
 
     }
   })
-
-
   res.send("posted");
 })
 
