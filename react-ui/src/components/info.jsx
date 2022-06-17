@@ -12,46 +12,13 @@ const Info = () => {
                 </div>
               </div>
               <div className='col-title'>
-                <span>1. Title</span>
+                <span>Sample Title</span>
               </div>
               <div className='col-content-block'>
-                <p className='col-summary'>Summary</p>
-            </div>
-             <div className='col-2'>
-                <div className='img-figure'>
-                  <img src='' alt='' />
-                </div>
-              </div>
-              <div className='col-title'>
-                <span>2. Title</span>
-              </div>
-              <div className='col-content-block'>
-                <p className='col-summary'>Summary</p>
-            </div>
-             <div className='col-3'>
-                <div className='img-figure'>
-                  <img src='' alt='' />
-                </div>
-              </div>
-              <div className='col-title'>
-                <span>3. Title</span>
-              </div>
-              <div className='col-content-block'>
-                <p className='col-summary'>Summary</p>
-            </div>
-             <div className='col-4'>
-                <div className='img-figure'>
-                  <img src='' alt='' />
-                </div>
-              </div>
-              <div className='col-title'>
-                <span>4. Title</span>
-              </div>
-              <div className='col-content-block'>
-                <p className='col-summary'>Summary</p>
-              </div>
+                <p className='col-summary'>Sample Summary</p>
             </div>
           </div>
+        </div>
       </section>
     </>
   )
