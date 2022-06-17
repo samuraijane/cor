@@ -26,7 +26,6 @@ const App = () => {
       
       <Header />
       <Main />
-      <Form />
       <Footer />
     </AppContext.Provider>
     </div>
