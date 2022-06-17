@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const {google} = require("googleapis");
-
+require('dotenv').config();
 
 const credentials = 
 {
@@ -16,7 +16,7 @@ const credentials =
     auth_provider_x509_cert_url: process.env.VAR9,
     client_x509_cert_url: process.env.VAR10,
 }
-console.log(credentials)
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
