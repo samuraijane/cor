@@ -7,10 +7,6 @@ const db = require('../models');
 router.use(express.urlencoded({extended: false})) // body parser (if needed)
 router.use(express.json())
 
-router.get('/', (req, res) => {
-  res.send('home page')
-})
-
 /* sign-in routes */
 router.get('/login', (req,res) => {
 
