@@ -15,15 +15,14 @@ const App = () => {
 
   return (
     <div className="App">
-    <AppContext.Provider value='isLoggedIn'>
-      <Header isMobileView={isMobileView} />
       <SVGImage type={AVATAR} />
       <SVGImage type={FACEBOOK} />
       <SVGImage type={GITHUB} />
       <SVGImage type={GOOGLE} />
       <SVGImage type={INSTAGRAM} />
       
-      <Header />
+    <AppContext.Provider value='isLoggedIn'>
+      <Header isMobileView={isMobileView} />
       <Main />
       <Footer />
     </AppContext.Provider>
