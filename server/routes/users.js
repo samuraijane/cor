@@ -99,28 +99,57 @@ router.get('/', (req, res)=>{
   res.render('')
 })
 
-/* mentee GET route */
-router.get('/', (req, res)=>{
-
-  res.render('')
+ //! get a list of all mentees /* mentee GET route */
+router.get('/mentee', async (req, res)=>{
+try {
+let mentees = await db.Users.findAll({where: {role:'mentee'}})
+  .then((results) => {
+    res.send(results)
+  })
+} catch (error) {
+  return res.status(423).json({ err })
+}
+ 
 })
 
-/* mentor GET route */
-router.get('/', (req, res)=>{
+//! get a list of all mentors /* mentor GET route */
+router.get('/mentor', async (req, res) => {
+  try {
+    let mentors = await db.Users.findAll({ where: { role: 'mentor' } })
+      console.log(mentors)
+      .then((results) => {
+        res.send(results)
+      })
+  } catch (error) {
+    return res.status(423).json({ error })
+  }
 
-  res.render('')
 })
 
-/* update POST route */
-router.post('/updateUser', (req, res)=>{
-
-  res.render('')
+//! update a user info /* update POST route */
+router.post('/updateUser', async (req, res)=>{
+let {id, firstName, lastName, email, password, description, mediaURL,linkedinURL, gender} = req.body
+  try {
+    const user = await db.users.update({ firstName, lastName, email, password, description, mediaURL, linkedinURL, gender },
+      { where: { id: id } })
+    res.json(user)
+  } catch (error) {
+    console.log(error)
+    res.json({ message: "there was an error", error: error })
+  }
 })
 
-/* delete POST route */
-router.post('/', (req, res)=>{
+//! delete user, send user id from front-end /* delete POST route */
+router.post('/users', async (req, res)=>{
+  let { id } = req.body
+  try {
 
-  res.render('')
+    const user = await db.users.destroy({ where: { id: id } })
+    res.json(user)
+  } catch (error) {
+    console.log(error)
+    res.json({ message: "there was an error", error: error })
+  }
 })
 
 /* Admin delete POST route */
