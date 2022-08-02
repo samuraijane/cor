@@ -1,0 +1,28 @@
+.img-container {
+    height: 430px;
+    width: 430px;
+    margin: 17px;
+  }
+  .img-container:hover {
+    cursor: pointer;
+  }
+  
+  .meet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .btn {
+    padding: 13px 26px;
+    margin: 17px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: rgba(250,125,41,.85);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+  .btn:hover {
+    opacity: 0.5;
+  }
