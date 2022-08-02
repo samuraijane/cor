@@ -23,11 +23,7 @@ const App = () => {
     <div className="App">
       <AppContext.Provider value='isLoggedIn'>
         <Header isMobileView={isMobileView} />
-        <Navbar />
         <Main />
-        <AboutUs />
-        <Form />
-        <Info />
         <Footer />
       </AppContext.Provider>
     </div>

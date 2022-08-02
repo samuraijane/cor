@@ -1,5 +1,11 @@
 import React from "react";
 import Banner from "../../components/callToAction";
+import Info from '../../components/info';
+import AboutUs from "../../components/AboutUs/AboutUs";
+import logo from '../../logo.svg';
+import Navbar from "../../components/navbar/Navbar"
+import Form from '../../components/form/Form';
+import "../../styles/app.scss";
 
 const Main = () => {
   return (
