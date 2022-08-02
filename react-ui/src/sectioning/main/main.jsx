@@ -1,16 +1,21 @@
-import React from "react";
-import Banner from "../../components/callToAction";
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import About from '../../routes/about/about'
+import Home from '../../routes/home/home'
+import Mentor from '../../routes/mentor/mentor'
+import Mentee from '../../routes/mentee/mentee'
 
 const Main = () => {
   return (
-    <div className="main">
-      <h1>
-        Lorem ipsum dolor
-      </h1>
-      <Banner heading="Mentorship Program" description="City of Refuge (COR) Mentorship program is a support resource that pairs mentors in the greater 
-      Atlanta, Georgia area with students who are participating in the web development and cyber programs at City of Refuge." btnText="More Info"/>
-    </div>
-  );
-};
+    <main className="main">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="mentor" element={<Mentor />} />
+        <Route path="mentee" element={<Mentee />} />
+      </Routes>
+    </main>
+  )
+}
 
-export default Main;
+export default Main
