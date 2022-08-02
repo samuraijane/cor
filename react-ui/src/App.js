@@ -1,3 +1,6 @@
+import logo from './logo.svg';
+import Navbar from "./components/navbar/Navbar"
+// import './App.css';
 
 import './styles/app.scss';
 
