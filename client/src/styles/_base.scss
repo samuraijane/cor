@@ -11,3 +11,8 @@ body {
 main {
   flex: 1 0 auto;
 }
+
+footer {
+  flex-shrink: 0;
+  background-color: rgb(149, 149, 149);
+}

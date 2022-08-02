@@ -14,14 +14,11 @@ const App = () => {
 
 
   return (
-    <div className="App">
-      
     <AppContext.Provider value='isLoggedIn'>
       <Header isMobileView={isMobileView} />
       <Main />
       <Footer />
     </AppContext.Provider>
-    </div>
   );
 };
 

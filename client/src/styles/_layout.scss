@@ -1,4 +1,6 @@
-.sticky {
-  flex-shrink: 0;
-  background-color: rgb(149, 149, 149);
+.y-sticky {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
