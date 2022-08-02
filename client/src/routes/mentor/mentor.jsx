@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Mentor() {
-  return <div>I am the Mentor Page.</div>
+  return <div>Mentor Page</div>
 }
 
 export default Mentor

@@ -4,7 +4,7 @@ import SVGImage, { AVATAR, FACEBOOK, GITHUB, GOOGLE, INSTAGRAM } from "../../com
 function Login() {
   return (
     <div>
-      <h2>I am the Login page</h2>
+      <h2>Login Page</h2>
       <SVGImage type={AVATAR} />
       <SVGImage type={FACEBOOK} />
       <SVGImage type={GITHUB} />
