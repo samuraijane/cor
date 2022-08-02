@@ -7,7 +7,7 @@ router.post('/mentor', async (req, res) => {
     
     try {
         //create a dataBase entry
-        // let answers = await dataBase.Mentor.create({ Q1, Q2, Q3, Q4, Q5, Q6 })
+        let answers = await dataBase.Mentor.create({ Q1, Q2, Q3, Q4, Q5, Q6 })
         res.json("answers")
         
     } catch (err) {

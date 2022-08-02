@@ -1,12 +1,11 @@
 
+import './styles/app.scss';
+
 import React, { createContext }  from 'react';
-import Form from './components/form/Form';
 import Footer from './sectioning/footer/footer';
 import Header from './sectioning/header/header';
 import Main from './sectioning/main/main';
 import { useViewport } from './hooks/useViewport';
-import Info from './components/info';
-import AboutUs from "./components/AboutUs/AboutUs";
 import "./styles/app.scss";
 import SVGImage, { AVATAR, FACEBOOK, GITHUB, GOOGLE, INSTAGRAM } from "./components/svg/icons";
 
@@ -30,11 +29,6 @@ const App = () => {
     <AppContext.Provider value='isLoggedIn'>
       <Header isMobileView={isMobileView} />
       <Main />
-      <AboutUs />
-
-      <Form />
-      <Info />
-
       <Footer />
     </AppContext.Provider>
     </div>
