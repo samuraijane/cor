@@ -4,7 +4,7 @@ import Header from './sectioning/header/header';
 import Main from './sectioning/main/main';
 import { useViewport } from './hooks/useViewport';
 import "./styles/app.scss";
-import SVGImage, { AVATAR, FACEBOOK, GITHUB, GOOGLE, INSTAGRAM } from "./components/svg/icons";
+
 
 export const AppContext = createContext('');
 
@@ -15,11 +15,6 @@ const App = () => {
 
   return (
     <div className="App">
-      <SVGImage type={AVATAR} />
-      <SVGImage type={FACEBOOK} />
-      <SVGImage type={GITHUB} />
-      <SVGImage type={GOOGLE} />
-      <SVGImage type={INSTAGRAM} />
       
     <AppContext.Provider value='isLoggedIn'>
       <Header isMobileView={isMobileView} />
