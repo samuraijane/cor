@@ -1,11 +1,5 @@
 import React from "react";
 import { Route, Routes } from 'react-router-dom'
-import Banner from "../../components/callToAction";
-import Info from '../../components/info';
-import AboutUs from "../../components/AboutUs/AboutUs";
-import Form from '../../components/form/Form';
-
-
 import About from '../../routes/about/about';
 import Home from '../../routes/home/home';
 import Login from '../../routes/login/login';

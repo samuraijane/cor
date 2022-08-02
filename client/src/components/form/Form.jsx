@@ -4,7 +4,7 @@ import './Form.css'
 const Form = () => {
   return (
     <>
-      <form action="/action_page.php">
+      <form>
         <label>Tell us about yourself
         <textarea type="text" className="about" name="about" required />
         </label>

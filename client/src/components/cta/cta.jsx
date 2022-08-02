@@ -1,7 +1,7 @@
 import React from 'react';
-import './callToAction.css';
+import './cta.css';
 
-function Banner({heading, description, href, btnText}) {
+function Cta({heading, description, href, btnText}) {
     return (
         <div className='banner'>
             <h1>{heading}</h1>
@@ -11,4 +11,4 @@ function Banner({heading, description, href, btnText}) {
     )
 }
 
-export default Banner;
+export default Cta;
