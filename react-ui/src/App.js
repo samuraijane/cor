@@ -2,8 +2,6 @@ import logo from './logo.svg';
 import Navbar from "./components/navbar/Navbar"
 // import './App.css';
 
-import './styles/app.scss';
-
 import React, { createContext }  from 'react';
 import Footer from './sectioning/footer/footer';
 import Header from './sectioning/header/header';
