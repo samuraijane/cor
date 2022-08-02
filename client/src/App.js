@@ -3,7 +3,7 @@ import Footer from './sectioning/footer/footer';
 import Header from './sectioning/header/header';
 import Main from './sectioning/main/main';
 import { useViewport } from './hooks/useViewport';
-import "./styles/app.scss";
+import './styles/style.scss';
 
 
 export const AppContext = createContext('');

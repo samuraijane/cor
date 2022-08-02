@@ -13,11 +13,9 @@ import Login from '../../routes/login/login';
 import Mentor from '../../routes/mentor/mentor';
 import Mentee from '../../routes/mentee/mentee';
 
-import "../../styles/app.scss";
-
 const Main = () => {
   return (
-    <main className="main">
+    <main>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />

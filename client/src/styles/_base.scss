@@ -8,11 +8,6 @@ body {
   flex-direction: column;
 }
 
-.main {
+main {
   flex: 1 0 auto;
-}
-
-.sticky {
-  flex-shrink: 0;
-  background-color: rgb(149, 149, 149);
 }
