@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.45a5e09a.css",
+    "main.js": "/static/js/main.8b5ac801.js",
+    "static/js/787.93df889d.chunk.js": "/static/js/787.93df889d.chunk.js",
+    "static/media/Martha Blaides- T2 Case Manager.jpg": "/static/media/Martha Blaides- T2 Case Manager.7054343609886f8123c8.jpg",
+    "static/media/Ron Cofield-T2 Academy Employment Specialist.jpg": "/static/media/Ron Cofield-T2 Academy Employment Specialist.1fb542b809d9da010417.jpg",
+    "static/media/John McQueen- T2 Recruitment Leader.jpg": "/static/media/John McQueen- T2 Recruitment Leader.9a8a6d995fe7ff5c18e6.jpg",
+    "static/media/Ross.jpg": "/static/media/Ross.7f788c99aad003b3d97a.jpg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.45a5e09a.css.map": "/static/css/main.45a5e09a.css.map",
+    "main.8b5ac801.js.map": "/static/js/main.8b5ac801.js.map",
+    "787.93df889d.chunk.js.map": "/static/js/787.93df889d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45a5e09a.css",
+    "static/js/main.8b5ac801.js"
+  ]
+}
