@@ -1,12 +1,12 @@
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
 
-var usersRouter = require('./routes/users');
-var form = require('./routes/formRouting');
+const usersRouter = require('./routes/users');
+const forms = require('./routes/forms');
 
-var app = express();
+const app = express();
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -15,7 +15,7 @@ app.use(cookieParser());
 app.use(express.static(path.resolve(__dirname + '/client/build')));
 
 app.use('/users', usersRouter);
-app.use('/form', form);
+app.use('/forms', forms);
 
 // catch-all so react can handle routing
 app.get('*', (req, res) => {
