@@ -17,10 +17,6 @@ const credentials =
     client_x509_cert_url: process.env.VAR10,
 }
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
 
 router.post('/google', async function(req, res, next) {
   const auth = new google.auth.GoogleAuth({
